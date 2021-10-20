@@ -4,39 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#35c4fd"
+    android:id="@+id/parent"
     tools:context=".MainActivity">
-    <Button
-        android:id="@+id/btnAdd"
+
+    <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="@android:color/holo_green_light"
-        android:text="Add" />
-    <EditText
-        android:id="@+id/etItem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/btnAdd"
-        android:ems="10"
-        android:hint="Add an item here!" />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvItems"
-        android:layout_width="357dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/etItem"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
+        android:text="Hello from Qizong!"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_above="@id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#02ed35"
+        android:textSize="24sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:text="Click to change background color"
+        android:id="@+id/changeBGBtn"
+        />
+    <TextView
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="#02ed35"
+        android:text="Click to change text color"
+        android:padding="10dp"
+        android:textColor="#09100a"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_above="@id/changeBGBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#02ed35"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:text="Click to change text"
+        android:id="@+id/changeTxtBtn"
+        />
+    <TextView
+        android:layout_above="@id/changeTxtBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#02ed35"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:text="Click to reset"
+        android:id="@+id/resetBtn"
+        />
+    <TextView
+        android:layout_above="@id/resetBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#02ed35"
+        android:textSize="26sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:text="Change text string"
+        android:id="@+id/changcusBtn"
+        />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/changcusBtn"
+        android:inputType="textPersonName"
+        android:hint="custom text"
+        />
+
+
 </RelativeLayout>
